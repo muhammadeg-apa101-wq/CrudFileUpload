@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\emila\\OneDrive\\Desktop\\Works\\Code Academy\\CFF\\Backend\\EntityFrameworkProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|c:\\users\\emila\\onedrive\\desktop\\works\\code academy\\cff\\backend\\entityframeworkproject\\entityframeworkproject\\views\\basket\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|solutionrelative:entityframeworkproject\\views\\basket\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|c:\\users\\emila\\onedrive\\desktop\\works\\code academy\\cff\\backend\\entityframeworkproject\\entityframeworkproject\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|solutionrelative:entityframeworkproject\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\emila\\OneDrive\\Desktop\\Works\\Code Academy\\CFF\\Backend\\EntityFrameworkProject\\EntityFrameworkProject\\Views\\Basket\\Index.cshtml",
+              "RelativeDocumentMoniker": "EntityFrameworkProject\\Views\\Basket\\Index.cshtml",
+              "ToolTip": "C:\\Users\\emila\\OneDrive\\Desktop\\Works\\Code Academy\\CFF\\Backend\\EntityFrameworkProject\\EntityFrameworkProject\\Views\\Basket\\Index.cshtml",
+              "RelativeToolTip": "EntityFrameworkProject\\Views\\Basket\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T06:58:58.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "C:\\Users\\emila\\OneDrive\\Desktop\\Works\\Code Academy\\CFF\\Backend\\EntityFrameworkProject\\EntityFrameworkProject\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "EntityFrameworkProject\\Controllers\\BasketController.cs",
+              "ToolTip": "C:\\Users\\emila\\OneDrive\\Desktop\\Works\\Code Academy\\CFF\\Backend\\EntityFrameworkProject\\EntityFrameworkProject\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "EntityFrameworkProject\\Controllers\\BasketController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwCAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T06:18:11.521Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
