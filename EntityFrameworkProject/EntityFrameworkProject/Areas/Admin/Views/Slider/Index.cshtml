@@ -27,9 +27,11 @@
                                     <img src="~/img/@item.Image" />
                                 </td>
                                 <td>
-                                    <button class="btn btn-info btn-rounded btn-fw"><i class="mdi mdi-alert-circle-outline"></i></button>
-                                    <button class="btn btn-primary btn-rounded btn-fw"><i class="mdi mdi-border-color"></i></button>
-                                    <button class="btn btn-danger btn-rounded btn-fw"><i class="mdi mdi-delete"></i></button>
+                                    <a class="btn btn-info btn-rounded btn-fw" asp-action="Detail" asp-route-id="@item.Id"><i class="mdi mdi-alert-circle-outline"></i></a>
+                                    <a class="btn btn-primary btn-rounded btn-fw" asp-action="Update" asp-route-id="@item.Id"><i class="mdi mdi-border-color"></i></a>
+                                    <form method="post" asp-action="Delete" asp-route-id="@item.Id">
+                                        <button class="btn btn-danger btn-rounded btn-fw"><i class="mdi mdi-delete"></i></button>
+                                    </form>
                                 </td>
                             </tr>
                         }

@@ -1,6 +1,7 @@
 ﻿using EntityFrameworkProject.Areas.Admin.ViewModels.CategoryVMs;
 using EntityFrameworkProject.Areas.Admin.ViewModels.SliderVMs;
 using EntityFrameworkProject.Data;
+using EntityFrameworkProject.Helpers;
 using EntityFrameworkProject.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -42,23 +43,98 @@ namespace EntityFrameworkProject.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid) return View(request);
 
-            string fileName = Guid.NewGuid().ToString() + "_" + request.Photo.FileName;
-            string path = Path.Combine(_env.WebRootPath, "img", fileName);
-
-            using (FileStream stream = new FileStream(path, FileMode.Create))
+            if (!request.Photo.CheckFileType("image/"))
             {
-                await request.Photo.CopyToAsync(stream);
+                ModelState.AddModelError("Photo", "File type must be image");
+                return View(request);
             }
 
-            Slider slider = new Slider
+            if (!request.Photo.CheckFileSize(200))
+            {
+                ModelState.AddModelError("Photo", "Image size must be max 200kb");
+                return View(request);
+            }
+
+            string fileName = request.Photo.GenerateFileName();
+            string path = _env.WebRootPath.GetFilePath("img", fileName);
+
+            request.Photo.SaveFile(path);
+
+            Slider newSlider = new Slider
             {
                 Image = fileName
             };
 
-            await _context.Sliders.AddAsync(slider);
+            await _context.Sliders.AddAsync(newSlider);
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            Slider? slider = await _context.Sliders.FirstOrDefaultAsync(m => m.Id == id && !m.IsDeleted);
+            if (slider == null) return NotFound();
+            string path = _env.WebRootPath.GetFilePath("img", slider.Image);
+
+            path.DeleteFile();
+
+            _context.Sliders.Remove(slider);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Update(int id)
+        {
+            Slider? slider = await _context.Sliders.FirstOrDefaultAsync(m => m.Id == id && !m.IsDeleted);
+            if (slider == null) return NotFound();
+            UpdateSliderVM updateSliderVM = new UpdateSliderVM
+            {
+                Image = slider.Image
+            };
+            return View(updateSliderVM);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Update(int id, UpdateSliderVM request)
+        {
+            if (!ModelState.IsValid) return View(request);
+            Slider? slider = await _context.Sliders.FirstOrDefaultAsync(m => m.Id == id && !m.IsDeleted);
+            if (slider == null) return NotFound();
+            if (request.Photo != null)
+            {
+                if (!request.Photo.CheckFileType("image/"))
+                {
+                    ModelState.AddModelError("Photo", "File type must be image");
+                    return View(request);
+                }
+                if (!request.Photo.CheckFileSize(200))
+                {
+                    ModelState.AddModelError("Photo", "Image size must be max 200kb");
+                    return View(request);
+                }
+                string oldPath = _env.WebRootPath.GetFilePath("img", slider.Image);
+                oldPath.DeleteFile();
+                string fileName = request.Photo.GenerateFileName();
+                string newPath = _env.WebRootPath.GetFilePath("img", fileName);
+                request.Photo.SaveFile(newPath);
+                slider.Image = fileName;
+            }
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        public async Task<IActionResult> Detail(int? id)
+        {
+            if(id == null) return NotFound();
+
+
+            Slider? slider = await _context.Sliders.FirstOrDefaultAsync(m => m.Id == id && !m.IsDeleted);
+            if (slider == null) return NotFound();
+            DetailSliderVM detailSliderVM = new DetailSliderVM
+            {
+                Image = slider.Image
+            };
+            return View(detailSliderVM);
         }
     }
 }

@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|c:\\users\\baloglan\\desktop\\entityframeworkproject\\entityframeworkproject\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|solutionrelative:entityframeworkproject\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|c:\\users\\baloglan\\desktop\\entityframeworkproject\\entityframeworkproject\\areas\\admin\\views\\slider\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|solutionrelative:entityframeworkproject\\areas\\admin\\views\\slider\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|c:\\users\\baloglan\\desktop\\entityframeworkproject\\entityframeworkproject\\areas\\admin\\views\\slider\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|solutionrelative:entityframeworkproject\\areas\\admin\\views\\slider\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|c:\\users\\baloglan\\desktop\\entityframeworkproject\\entityframeworkproject\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|solutionrelative:entityframeworkproject\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|c:\\users\\baloglan\\desktop\\entityframeworkproject\\entityframeworkproject\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|solutionrelative:entityframeworkproject\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|c:\\users\\baloglan\\desktop\\entityframeworkproject\\entityframeworkproject\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|solutionrelative:entityframeworkproject\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|c:\\users\\baloglan\\desktop\\entityframeworkproject\\entityframeworkproject\\areas\\admin\\viewmodels\\slidervms\\createslidervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|solutionrelative:entityframeworkproject\\areas\\admin\\viewmodels\\slidervms\\createslidervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|c:\\users\\baloglan\\desktop\\entityframeworkproject\\entityframeworkproject\\areas\\admin\\viewmodels\\slidervms\\detailslidervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37B89880-4162-71E2-65D0-D7D4B58946E6}|EntityFrameworkProject\\EntityFrameworkProject.csproj|solutionrelative:entityframeworkproject\\areas\\admin\\viewmodels\\slidervms\\detailslidervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,28 +38,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateSliderVm.cs",
-              "DocumentMoniker": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\ViewModels\\SliderVMs\\CreateSliderVm.cs",
-              "RelativeDocumentMoniker": "EntityFrameworkProject\\Areas\\Admin\\ViewModels\\SliderVMs\\CreateSliderVm.cs",
-              "ToolTip": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\ViewModels\\SliderVMs\\CreateSliderVm.cs",
-              "RelativeToolTip": "EntityFrameworkProject\\Areas\\Admin\\ViewModels\\SliderVMs\\CreateSliderVm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T18:56:46.267Z",
+              "DocumentIndex": 0,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "RelativeDocumentMoniker": "EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "RelativeToolTip": "EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Detail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T20:39:47.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
-              "RelativeDocumentMoniker": "EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
-              "ToolTip": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
-              "RelativeToolTip": "EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "DetailSliderVM.cs",
+              "DocumentMoniker": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\ViewModels\\SliderVMs\\DetailSliderVM.cs",
+              "RelativeDocumentMoniker": "EntityFrameworkProject\\Areas\\Admin\\ViewModels\\SliderVMs\\DetailSliderVM.cs",
+              "ToolTip": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\ViewModels\\SliderVMs\\DetailSliderVM.cs",
+              "RelativeToolTip": "EntityFrameworkProject\\Areas\\Admin\\ViewModels\\SliderVMs\\DetailSliderVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T20:25:44.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Update.cshtml",
+              "RelativeDocumentMoniker": "EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Update.cshtml",
+              "ToolTip": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Update.cshtml",
+              "RelativeToolTip": "EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-24T18:55:45.132Z",
+              "WhenOpened": "2025-12-25T20:05:49.119Z",
               "EditorCaption": ""
             },
             {
@@ -70,35 +83,22 @@
               "RelativeDocumentMoniker": "EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
               "ToolTip": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
               "RelativeToolTip": "EntityFrameworkProject\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwB0AAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-24T18:43:13.191Z",
+              "WhenOpened": "2025-12-25T19:43:58.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "EntityFrameworkProject\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "EntityFrameworkProject\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T18:39:25.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "SliderController.cs",
               "DocumentMoniker": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\Controllers\\SliderController.cs",
               "RelativeDocumentMoniker": "EntityFrameworkProject\\Areas\\Admin\\Controllers\\SliderController.cs",
               "ToolTip": "C:\\Users\\baloglan\\Desktop\\EntityFrameworkProject\\EntityFrameworkProject\\Areas\\Admin\\Controllers\\SliderController.cs",
               "RelativeToolTip": "EntityFrameworkProject\\Areas\\Admin\\Controllers\\SliderController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAtwDcAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAcwH0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T18:12:05.168Z",
+              "WhenOpened": "2025-12-25T17:48:15.589Z",
               "EditorCaption": ""
             }
           ]
